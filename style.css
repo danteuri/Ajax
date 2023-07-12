@@ -3,6 +3,7 @@ body {
     margin-right: 5%;
     padding: 0%;
     text-align: center;
+    background-color: rgb(255, 236, 150);
   }
   
   .container {
@@ -10,5 +11,6 @@ body {
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    background-color: rgb(255, 236, 150);
   }
   

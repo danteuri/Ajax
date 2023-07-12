@@ -17,7 +17,7 @@ function solicitudAJAX(params) {
         }
       }
     };
-    objXMLHttpRequest.open("GET", url);
+    objXMLHttpRequest.open("GET", url + '?limit:500');
     objXMLHttpRequest.send();
   }
   
