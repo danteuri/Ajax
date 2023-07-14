@@ -31,16 +31,17 @@ function solicitudAJAX(params) {
           let json = JSON.parse(objXMLHttpRequest.responseText);
           let nombre = json.name;
           let uriImg = json.sprites.other.home.front_default;
-  
+          let trans = json.stats[5].base_stat;
+          console.log(json)
           let html =
             `<div class="card" style="width: 18rem;">
     <img src="` +
             uriImg +
             `" class="card-img-top" alt="...">
-    <div class="card-body">
+    <div class="card-body"><br>
       <h5 class="card-title">` +
             nombre +
-            `</h5>
+            `</h5><br>
       <p class="card-text"></p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
