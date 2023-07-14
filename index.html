@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>PokeAPI</title>
     <link
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
+    <link rel="image" href="/132934430.png"/>
     <link rel="stylesheet" href="style.css" />
     <style>
       body{
@@ -18,24 +19,25 @@
   </head>
 
   <body onload="solicitudAJAX()">
+    <center>
     <div class="container">
       <h4>
-        Ay María cuando serás mía <span class="badge bg-secondary">danteuri</span>
+        Información del Pokemon <span class="badge bg-secondary">danteuri</span>
       </h4>
-      <label for="nPokemon">Buscador</label>
       <input
         type="number"
         id="nPokemon"
         placeholder="Ingresar un numreo de Pokemon"
         data=""
       />
-      <button onclick="buscar()" style="border: 0cm;">
-        Buscar
+      <button onclick="buscar2()" style="background-color: rgb(126, 248, 217);">
+        Buscar!
       </button>
     </div>
     <div id="wallet_container"></div>
     <div id="ConteinerCard"></div>
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script src="index.js"></script>
+    </center>
   </body>
 </html>
