@@ -69,7 +69,7 @@ function solicitudAJAX(params) {
       objXMLHttpRequest.onreadystatechange = function () {
         if (objXMLHttpRequest.readyState === 4) {
           if (objXMLHttpRequest.status === 200) {
-            let json = JSON.parse(objXMLHttpRequest.responseText);
+            let zjson = JSON.parse(objXMLHttpRequest.responseText);
             let nombre = json.name;
             let uriImg = json.sprites.other.home.front_default;
             let html =
